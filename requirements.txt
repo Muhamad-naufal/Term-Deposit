@@ -1,8 +1,8 @@
-numpy
-scipy
 scikit-learn
-matplotlib
 pandas
 streamlit
 cython
+os
+time
+streamlit_pandas_profiling
 pycaret
