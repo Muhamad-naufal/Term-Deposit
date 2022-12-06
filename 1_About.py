@@ -1,19 +1,4 @@
 import streamlit as st
-from PIL import Image
-import os
-from pycaret.regression import setup, compare_models, pull, save_model, load_model
-from sklearn.tree import DecisionTreeClassifier
-from sklearn import metrics
-from sklearn.metrics import classification_report, accuracy_score
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.ensemble import RandomForestRegressor
-import pandas_profiling
-from streamlit_pandas_profiling import st_profile_report
-import pandas as pd
-import joblib
 
 st.set_page_config(
     page_title="About",
