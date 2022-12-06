@@ -23,5 +23,5 @@ st.write("""
 1. Membantu para pegawai bank pada bagian perbankan dalam menentukan nasabah mana
    yang harus diprioritaskan dalam pemasaran program deposito berjangka\n
 2. Membantu para user mengetahui proses modeling yang dilakukan para programmer\n
-3. Membantu para user dalam proses pembuatan projek AI\,
+3. Membantu para user dalam proses pembuatan projek AI.
 """)
