@@ -6,4 +6,4 @@ pandas
 streamlit
 cython
 pycaret
-streamlit_pandas_profilng
+streamlit_pandas_profiling
