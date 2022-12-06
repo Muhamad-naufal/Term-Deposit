@@ -1,13 +1,9 @@
 import streamlit as st
 import os
 import time
-from sklearn.metrics import mean_squared_error, r2_score
 from pycaret.regression import setup, compare_models, pull, save_model, load_model
 from streamlit_pandas_profiling import st_profile_report
 import pandas as pd
-from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.datasets import load_diabetes, load_boston
-from sklearn.model_selection import train_test_split
 
 def save_upload(uploadfile):
     with open(os.path.join("data_simpan", uploadfile.name),"wb") as f:
