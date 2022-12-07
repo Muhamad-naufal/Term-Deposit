@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 import time
+from pandas_profiling import ProfileReport
 from pycaret.regression import setup, compare_models, pull, save_model, load_model
 from streamlit_pandas_profiling import st_profile_report
 import pandas as pd
@@ -21,7 +22,7 @@ if file:
     st.dataframe(df)
     save_upload(file)
     st.text("Proses Data Exploration")
-    profile_df = df.profile_report()
+    profile_df = ProfileReport(df)
     st_profile_report(profile_df)
 
     st.text("Membuat Model")
