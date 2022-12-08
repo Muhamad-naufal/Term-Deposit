@@ -4,7 +4,7 @@ from PIL import Image
 
 model=joblib.load("./model/model1")
 def Predict(age,contact,duration,education,pdays,poutcome,previous):
-    #Labels for Education
+    #Labels untuk Education
         if education == "illiterate" or education == "basic.4y" or education == "basic.6y" or education == "basic.9y":
             x = 0
         elif education == "high.school" or education == "unknown":
@@ -13,12 +13,12 @@ def Predict(age,contact,duration,education,pdays,poutcome,previous):
             x = 2
         else:
             x = 3
-        # Labels for contacts
+        # Labels untuk contacts
         if contact == "cellular":
             x1 = 0
         else:
             x1 = 1
-        # Labels for poutcome
+        # Labels untuk poutcome
         if poutcome=="nonexistent":
             x2 = 0
         elif poutcome == "failure":
